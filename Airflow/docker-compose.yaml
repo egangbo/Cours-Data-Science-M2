@@ -1,6 +1,7 @@
 services:
   airflow:
-    image: apache/airflow:slim-latest-python3.9
+    image: apache/airflow:2.9.2-python3.9
+
     command: standalone
     environment:
       - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
